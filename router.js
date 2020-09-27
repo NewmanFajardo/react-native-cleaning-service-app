@@ -54,38 +54,38 @@ function SettingsStackScreen() {
 export default RouterApp = () => {
   return (
     <NavigationContainer>
-    <Tab.Navigator>
-      <Tab.Screen
-        name="Home"
-        component={HomeStackScreen}
-        options={{
-          title: "Inicio",
-          tabBarIcon: ({ color }) => (
-            <Octicons name="home" size={24} color={color} />
-          )
-        }}
-      />
-      <Tab.Screen
-        name="Payments"
-        component={PaymentsStackScreen}
-        options={{
-          title: "Pagar",
-          tabBarIcon: ({ color }) => (
-            <AntDesign name="carryout" size={24} color={color} />
-          )
-        }}
-      />
-      <Tab.Screen
-        name="Settings"
-        component={SettingsStackScreen}
-        options={{
-          title: "Configuración",
-          tabBarIcon: ({ color }) => (
-            <AntDesign name="setting" size={24} color={color} />
-          )
-        }}
-      />
-    </Tab.Navigator>
-  </NavigationContainer>
-  )
+      <Tab.Navigator>
+        <Tab.Screen
+          name="Home"
+          component={HomeStackScreen}
+          options={{
+            title: "Inicio",
+            tabBarIcon: ({ color }) => (
+              <Octicons name="home" size={24} color={color} />
+            )
+          }}
+        />
+        <Tab.Screen
+          name="Payments"
+          component={PaymentsStackScreen}
+          options={{
+            title: "Pagar",
+            tabBarIcon: ({ color }) => (
+              <AntDesign name="carryout" size={24} color={color} />
+            )
+          }}
+        />
+        <Tab.Screen
+          name="Settings"
+          component={SettingsStackScreen}
+          options={{
+            title: "Configuración",
+            tabBarIcon: ({ color }) => (
+              <AntDesign name="setting" size={24} color={color} />
+            )
+          }}
+        />
+      </Tab.Navigator>
+    </NavigationContainer>
+  );
 } 
